@@ -14,3 +14,12 @@ updates:
       - "misc/"
     schedule:
       interval: "daily"
+    groups:
+      # Specify a name for the group, which will be used in pull request titles
+      # and branch names
+      base-images:
+        applies-to: version-updates
+        update-types:
+          - "major"
+          - "minor"
+          - "patch"
